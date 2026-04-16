@@ -31,6 +31,9 @@
             splitContainer1 = new SplitContainer();
             panel3 = new Panel();
             lvwLeftDir = new ListView();
+            columnHeader7 = new ColumnHeader();
+            columnHeader8 = new ColumnHeader();
+            columnHeader9 = new ColumnHeader();
             panel2 = new Panel();
             txtLeftDir = new TextBox();
             btnLeftDir = new Button();
@@ -50,9 +53,6 @@
             columnHeader1 = new ColumnHeader();
             columnHeader2 = new ColumnHeader();
             columnHeader3 = new ColumnHeader();
-            columnHeader7 = new ColumnHeader();
-            columnHeader8 = new ColumnHeader();
-            columnHeader9 = new ColumnHeader();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
@@ -107,6 +107,21 @@
             lvwLeftDir.UseCompatibleStateImageBehavior = false;
             lvwLeftDir.View = View.Details;
             // 
+            // columnHeader7
+            // 
+            columnHeader7.Text = "이름";
+            columnHeader7.Width = 100;
+            // 
+            // columnHeader8
+            // 
+            columnHeader8.Text = "크기";
+            columnHeader8.Width = 100;
+            // 
+            // columnHeader9
+            // 
+            columnHeader9.Text = "수정일";
+            columnHeader9.Width = 180;
+            // 
             // panel2
             // 
             panel2.Controls.Add(txtLeftDir);
@@ -126,6 +141,7 @@
             // 
             // btnLeftDir
             // 
+            btnLeftDir.Font = new Font("맑은 고딕", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 129);
             btnLeftDir.Location = new Point(299, 23);
             btnLeftDir.Name = "btnLeftDir";
             btnLeftDir.Size = new Size(94, 29);
@@ -213,6 +229,7 @@
             // 
             // btnRightDir
             // 
+            btnRightDir.Font = new Font("맑은 고딕", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 129);
             btnRightDir.Location = new Point(284, 24);
             btnRightDir.Name = "btnRightDir";
             btnRightDir.Size = new Size(94, 29);
@@ -256,21 +273,6 @@
             // columnHeader3
             // 
             columnHeader3.DisplayIndex = 2;
-            // 
-            // columnHeader7
-            // 
-            columnHeader7.Text = "이름";
-            columnHeader7.Width = 100;
-            // 
-            // columnHeader8
-            // 
-            columnHeader8.Text = "크기";
-            columnHeader8.Width = 100;
-            // 
-            // columnHeader9
-            // 
-            columnHeader9.Text = "수정일";
-            columnHeader9.Width = 180;
             // 
             // Form1
             // 
