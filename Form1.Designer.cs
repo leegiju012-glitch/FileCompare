@@ -167,7 +167,7 @@
             // btnCopyFromRight
             // 
             btnCopyFromRight.Anchor = AnchorStyles.Right;
-            btnCopyFromRight.Location = new Point(298, 78);
+            btnCopyFromRight.Location = new Point(295, 78);
             btnCopyFromRight.Name = "btnCopyFromRight";
             btnCopyFromRight.Size = new Size(94, 29);
             btnCopyFromRight.TabIndex = 1;
