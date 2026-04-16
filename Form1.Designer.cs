@@ -97,15 +97,17 @@
             // 
             // lvwLeftDir
             // 
+            lvwLeftDir.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             lvwLeftDir.Columns.AddRange(new ColumnHeader[] { columnHeader7, columnHeader8, columnHeader9 });
             lvwLeftDir.FullRowSelect = true;
             lvwLeftDir.GridLines = true;
-            lvwLeftDir.Location = new Point(7, 4);
+            lvwLeftDir.Location = new Point(11, 6);
             lvwLeftDir.Name = "lvwLeftDir";
             lvwLeftDir.Size = new Size(387, 237);
             lvwLeftDir.TabIndex = 0;
             lvwLeftDir.UseCompatibleStateImageBehavior = false;
             lvwLeftDir.View = View.Details;
+            lvwLeftDir.SelectedIndexChanged += lvwLeftDir_SelectedIndexChanged;
             // 
             // columnHeader7
             // 
@@ -134,6 +136,7 @@
             // 
             // txtLeftDir
             // 
+            txtLeftDir.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             txtLeftDir.Location = new Point(10, 25);
             txtLeftDir.Name = "txtLeftDir";
             txtLeftDir.Size = new Size(269, 27);
@@ -141,6 +144,7 @@
             // 
             // btnLeftDir
             // 
+            btnLeftDir.Anchor = AnchorStyles.Right;
             btnLeftDir.Font = new Font("맑은 고딕", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 129);
             btnLeftDir.Location = new Point(299, 23);
             btnLeftDir.Name = "btnLeftDir";
@@ -162,8 +166,8 @@
             // 
             // btnCopyFromRight
             // 
-            btnCopyFromRight.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            btnCopyFromRight.Location = new Point(295, 78);
+            btnCopyFromRight.Anchor = AnchorStyles.Right;
+            btnCopyFromRight.Location = new Point(298, 78);
             btnCopyFromRight.Name = "btnCopyFromRight";
             btnCopyFromRight.Size = new Size(94, 29);
             btnCopyFromRight.TabIndex = 1;
@@ -192,6 +196,7 @@
             // 
             // lvwRightDir
             // 
+            lvwRightDir.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             lvwRightDir.Columns.AddRange(new ColumnHeader[] { columnHeader4, columnHeader5, columnHeader6 });
             lvwRightDir.FullRowSelect = true;
             lvwRightDir.GridLines = true;
@@ -229,6 +234,7 @@
             // 
             // btnRightDir
             // 
+            btnRightDir.Anchor = AnchorStyles.Right;
             btnRightDir.Font = new Font("맑은 고딕", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 129);
             btnRightDir.Location = new Point(284, 24);
             btnRightDir.Name = "btnRightDir";
@@ -236,9 +242,11 @@
             btnRightDir.TabIndex = 1;
             btnRightDir.Text = "폴더선택";
             btnRightDir.UseVisualStyleBackColor = true;
+            btnRightDir.Click += btnRightDir_Click;
             // 
             // txtRightDir
             // 
+            txtRightDir.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             txtRightDir.Location = new Point(3, 25);
             txtRightDir.Name = "txtRightDir";
             txtRightDir.Size = new Size(266, 27);
@@ -255,6 +263,7 @@
             // 
             // btnCopyFromLeft
             // 
+            btnCopyFromLeft.Anchor = AnchorStyles.Left;
             btnCopyFromLeft.Location = new Point(3, 78);
             btnCopyFromLeft.Name = "btnCopyFromLeft";
             btnCopyFromLeft.Size = new Size(94, 29);
