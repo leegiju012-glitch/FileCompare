@@ -264,11 +264,11 @@
             // btnCopyFromLeft
             // 
             btnCopyFromLeft.Anchor = AnchorStyles.Left;
-            btnCopyFromLeft.Location = new Point(3, 78);
+            btnCopyFromLeft.Location = new Point(6, 78);
             btnCopyFromLeft.Name = "btnCopyFromLeft";
             btnCopyFromLeft.Size = new Size(94, 29);
             btnCopyFromLeft.TabIndex = 2;
-            btnCopyFromLeft.Text = "<<<";
+            btnCopyFromLeft.Text = "ㅘ";
             btnCopyFromLeft.UseVisualStyleBackColor = true;
             // 
             // columnHeader1
